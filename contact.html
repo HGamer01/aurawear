@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Aura Fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AURA<span>.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons"><i class="fas fa-search"></i><i class="far fa-user"></i><i class="fas fa-shopping-bag"></i></div>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container text-center">
+            <h1 class="page-title animate-on-scroll">Get In Touch</h1>
+            <p style="color: var(--color-text-muted);" class="animate-on-scroll">Our client advisors are available to assist you with any inquiries.</p>
+        </div>
+    </section>
+
+    <section class="section-padding" style="padding-top: 0;">
+        <div class="container">
+            <div class="store-grid">
+                
+                <div class="contact-info-block animate-on-scroll">
+                    <h2 style="margin-bottom: 2rem;">Client Services</h2>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+91 98765 43210<br><span style="font-size: 0.8rem;">Mon-Sat 10am-8pm IST</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>concierge@aurafashion.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>Chat with a stylist<br><span style="font-size: 0.8rem;">Available 24/7</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrap animate-on-scroll" style="background: var(--color-surface-light); padding: 3rem; border: 1px solid var(--glass-border);">
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                        <div class="form-group">
+                            <input type="text" class="form-control" required>
+                            <label class="form-label">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" required>
+                            <label class="form-label">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" required style="cursor: pointer; appearance: none;">
+                                <option value="" disabled selected></option>
+                                <option value="general" style="background: var(--color-bg);">General Inquiry</option>
+                                <option value="order" style="background: var(--color-bg);">Order Status</option>
+                                <option value="styling" style="background: var(--color-bg);">Styling Advice</option>
+                                <option value="returns" style="background: var(--color-bg);">Returns & Exchanges</option>
+                            </select>
+                            <label class="form-label" style="top: -20px; font-size: 0.8rem; color: var(--color-accent);">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="4" required></textarea>
+                            <label class="form-label">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem; display: inline-block;">AURA<span>.</span></a>
+                    <p style="color: var(--color-text-muted);">Defining modern luxury. Elevate your wardrobe with our meticulously crafted collections.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="shop.html">Women's Collection</a></li>
+                        <li><a href="shop.html">Men's Collection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Client Services</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

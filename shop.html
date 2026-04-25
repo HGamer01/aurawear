@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Aura Fashion</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AURA<span>.</span></a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link active">Shop</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-icons">
+                <i class="fas fa-search"></i>
+                <i class="far fa-user"></i>
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container text-center">
+            <h1 class="page-title animate-on-scroll">The Collection</h1>
+            <p style="color: var(--color-text-muted); text-align: center;" class="animate-on-scroll">Discover pieces that define modern luxury.</p>
+        </div>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="section-padding" style="padding-top: 0;">
+        <div class="container">
+            
+            <!-- Filters -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 1rem;">
+                <div style="display: flex; gap: 2rem;">
+                    <span style="color: var(--color-accent); font-weight: 600; cursor: pointer;">All</span>
+                    <span style="color: var(--color-text-muted); cursor: pointer;">Women</span>
+                    <span style="color: var(--color-text-muted); cursor: pointer;">Men</span>
+                    <span style="color: var(--color-text-muted); cursor: pointer;">Accessories</span>
+                </div>
+                <div>
+                    <span style="color: var(--color-text-muted); margin-right: 1rem;">Sort By:</span>
+                    <select style="background: transparent; color: var(--color-text); border: none; font-family: var(--font-body); cursor: pointer; outline: none;">
+                        <option value="new" style="background: var(--color-bg);">New Arrivals</option>
+                        <option value="price-asc" style="background: var(--color-bg);">Price: Low to High</option>
+                        <option value="price-desc" style="background: var(--color-bg);">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card animate-on-scroll">
+                    <div class="product-badge">New</div>
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1550614000-4b95d466f1fc?q=80&w=1887&auto=format&fit=crop" alt="Silk Dress" class="product-img">
+                        <img src="https://images.unsplash.com/photo-1550614000-4b95d466f1fc?q=80&w=1887&auto=format&fit=crop" alt="Silk Dress Alt" class="product-img-hover">
+                        <div class="product-actions">
+                            <div class="action-btn"><i class="far fa-heart"></i></div>
+                            <a href="product-details.html" class="action-btn" style="color: inherit;"><i class="far fa-eye"></i></a>
+                            <div class="action-btn"><i class="fas fa-shopping-bag"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Midnight Silk Dress</h4>
+                        <span class="product-price">₹12,500</span>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card animate-on-scroll">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?q=80&w=1780&auto=format&fit=crop" alt="Tailored Suit" class="product-img">
+                        <img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?q=80&w=1780&auto=format&fit=crop" alt="Tailored Suit Alt" class="product-img-hover">
+                        <div class="product-actions">
+                            <div class="action-btn"><i class="far fa-heart"></i></div>
+                            <a href="product-details.html" class="action-btn" style="color: inherit;"><i class="far fa-eye"></i></a>
+                            <div class="action-btn"><i class="fas fa-shopping-bag"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Signature Wool Suit</h4>
+                        <span class="product-price">₹35,000</span>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card animate-on-scroll">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=1915&auto=format&fit=crop" alt="Gold Watch" class="product-img">
+                        <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=1915&auto=format&fit=crop" alt="Gold Watch Alt" class="product-img-hover">
+                        <div class="product-actions">
+                            <div class="action-btn"><i class="far fa-heart"></i></div>
+                            <a href="product-details.html" class="action-btn" style="color: inherit;"><i class="far fa-eye"></i></a>
+                            <div class="action-btn"><i class="fas fa-shopping-bag"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Aura Chronograph</h4>
+                        <span class="product-price">₹42,000</span>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card animate-on-scroll">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1712&auto=format&fit=crop" alt="Leather Boots" class="product-img">
+                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1712&auto=format&fit=crop" alt="Leather Boots Alt" class="product-img-hover">
+                        <div class="product-actions">
+                            <div class="action-btn"><i class="far fa-heart"></i></div>
+                            <a href="product-details.html" class="action-btn" style="color: inherit;"><i class="far fa-eye"></i></a>
+                            <div class="action-btn"><i class="fas fa-shopping-bag"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Classic Chelsea Boots</h4>
+                        <span class="product-price">₹8,900</span>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card animate-on-scroll">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=1887&auto=format&fit=crop" alt="Trench Coat" class="product-img">
+                        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=1887&auto=format&fit=crop" alt="Trench Coat Alt" class="product-img-hover">
+                        <div class="product-actions">
+                            <div class="action-btn"><i class="far fa-heart"></i></div>
+                            <a href="product-details.html" class="action-btn" style="color: inherit;"><i class="far fa-eye"></i></a>
+                            <div class="action-btn"><i class="fas fa-shopping-bag"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Cashmere Trench Coat</h4>
+                        <span class="product-price">₹22,000</span>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card animate-on-scroll">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1617137984090-e54707010f34?q=80&w=1887&auto=format&fit=crop" alt="Leather Bag" class="product-img">
+                        <img src="https://images.unsplash.com/photo-1617137984090-e54707010f34?q=80&w=1887&auto=format&fit=crop" alt="Leather Bag Alt" class="product-img-hover">
+                        <div class="product-actions">
+                            <div class="action-btn"><i class="far fa-heart"></i></div>
+                            <a href="product-details.html" class="action-btn" style="color: inherit;"><i class="far fa-eye"></i></a>
+                            <div class="action-btn"><i class="fas fa-shopping-bag"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Noir Leather Tote</h4>
+                        <span class="product-price">₹18,500</span>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card animate-on-scroll">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=1888&auto=format&fit=crop" alt="Shirt" class="product-img">
+                        <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=1888&auto=format&fit=crop" alt="Shirt Alt" class="product-img-hover">
+                        <div class="product-actions">
+                            <div class="action-btn"><i class="far fa-heart"></i></div>
+                            <a href="product-details.html" class="action-btn" style="color: inherit;"><i class="far fa-eye"></i></a>
+                            <div class="action-btn"><i class="fas fa-shopping-bag"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Linen Summer Shirt</h4>
+                        <span class="product-price">₹4,500</span>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card animate-on-scroll">
+                    <div class="product-badge" style="background: var(--color-text); color: var(--color-bg);">Exclusive</div>
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1588117305388-c2631a279f82?q=80&w=1887&auto=format&fit=crop" alt="Sunglasses" class="product-img">
+                        <img src="https://images.unsplash.com/photo-1588117305388-c2631a279f82?q=80&w=1887&auto=format&fit=crop" alt="Sunglasses Alt" class="product-img-hover">
+                        <div class="product-actions">
+                            <div class="action-btn"><i class="far fa-heart"></i></div>
+                            <a href="product-details.html" class="action-btn" style="color: inherit;"><i class="far fa-eye"></i></a>
+                            <div class="action-btn"><i class="fas fa-shopping-bag"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Obsidian Sunglasses</h4>
+                        <span class="product-price">₹6,200</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div style="display: flex; justify-content: center; margin-top: 4rem; gap: 1rem;">
+                <span style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: var(--color-accent); color: var(--color-bg); cursor: pointer;">1</span>
+                <span style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--glass-border); cursor: pointer;">2</span>
+                <span style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--glass-border); cursor: pointer;">3</span>
+                <span style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--glass-border); cursor: pointer;"><i class="fas fa-chevron-right"></i></span>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem; display: inline-block;">AURA<span>.</span></a>
+                    <p style="color: var(--color-text-muted);">Defining modern luxury. Elevate your wardrobe with our meticulously crafted collections.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="shop.html">Women's Collection</a></li>
+                        <li><a href="shop.html">Men's Collection</a></li>
+                        <li><a href="shop.html">Accessories</a></li>
+                        <li><a href="shop.html">New Arrivals</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Client Services</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="terms.html">Shipping & Returns</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Subscribe to receive updates on new arrivals and exclusive offers.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aura Fashion. All Rights Reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight Silk Dress | Aura Fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .product-detail-section {
+            padding-top: 120px;
+            padding-bottom: 5rem;
+        }
+        .product-grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        .product-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        .gallery-item {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            cursor: zoom-in;
+        }
+        .gallery-item.large {
+            grid-column: span 2;
+            height: 700px;
+        }
+        .product-info-sticky {
+            position: sticky;
+            top: 120px;
+        }
+        .breadcrumb {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+            color: var(--color-text-muted);
+        }
+        .breadcrumb a {
+            color: var(--color-text);
+        }
+        .product-title-large {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .product-price-large {
+            font-size: 1.5rem;
+            font-family: var(--font-body);
+            color: var(--color-text-muted);
+            margin-bottom: 2rem;
+        }
+        .product-description {
+            color: var(--color-text-muted);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        .size-selector {
+            margin-bottom: 2rem;
+        }
+        .size-selector h4 {
+            font-family: var(--font-body);
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+        .size-options {
+            display: flex;
+            gap: 1rem;
+        }
+        .size-btn {
+            width: 45px;
+            height: 45px;
+            border: 1px solid var(--glass-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .size-btn:hover, .size-btn.active {
+            border-color: var(--color-accent);
+            color: var(--color-accent);
+        }
+        .add-to-cart-wrapper {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+        .add-to-cart-wrapper .btn {
+            flex: 1;
+            text-align: center;
+        }
+        .wishlist-btn {
+            width: 50px;
+            height: 50px;
+            border: 1px solid var(--glass-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .wishlist-btn:hover {
+            border-color: var(--color-text);
+        }
+        .accordion {
+            border-top: 1px solid var(--glass-border);
+        }
+        .accordion-item {
+            border-bottom: 1px solid var(--glass-border);
+        }
+        .accordion-header {
+            padding: 1.5rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-family: var(--font-body);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        .accordion-content {
+            padding-bottom: 1.5rem;
+            color: var(--color-text-muted);
+            display: none;
+        }
+        @media (max-width: 992px) {
+            .product-grid-layout { grid-template-columns: 1fr; }
+            .product-info-sticky { position: relative; top: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AURA<span>.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link active">Shop</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <i class="fas fa-search"></i>
+                <i class="far fa-user"></i>
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <!-- Product Details -->
+    <section class="product-detail-section">
+        <div class="container">
+            <div class="product-grid-layout">
+                
+                <!-- Gallery -->
+                <div class="product-gallery animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1550614000-4b95d466f1fc?q=80&w=1887&auto=format&fit=crop" class="gallery-item large" alt="Midnight Silk Dress">
+                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=1983&auto=format&fit=crop" class="gallery-item" alt="Detail 1">
+                    <img src="https://images.unsplash.com/photo-1582533561751-0bb1d1354316?q=80&w=1887&auto=format&fit=crop" class="gallery-item" alt="Detail 2">
+                </div>
+
+                <!-- Info -->
+                <div class="product-info-wrap animate-on-scroll">
+                    <div class="product-info-sticky">
+                        <div class="breadcrumb">
+                            <a href="index.html">Home</a> / <a href="shop.html">Women</a> / Dresses
+                        </div>
+                        
+                        <h1 class="product-title-large">Midnight Silk Dress</h1>
+                        <div class="product-price-large">₹12,500</div>
+                        
+                        <p class="product-description">
+                            Crafted from 100% pure Mulberry silk, the Midnight Dress drapes elegantly to create a silhouette that is both timeless and alluring. Featuring a cowl neckline and an open back design, it's the perfect statement piece for any evening occasion.
+                        </p>
+                        
+                        <div class="size-selector">
+                            <h4>Select Size</h4>
+                            <div class="size-options">
+                                <div class="size-btn">XS</div>
+                                <div class="size-btn active">S</div>
+                                <div class="size-btn">M</div>
+                                <div class="size-btn">L</div>
+                            </div>
+                        </div>
+                        
+                        <div class="add-to-cart-wrapper">
+                            <button class="btn btn-primary" onclick="alert('Added to cart!')">Add To Cart - ₹12,500</button>
+                            <div class="wishlist-btn"><i class="far fa-heart"></i></div>
+                        </div>
+                        
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">
+                                    Details & Care <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <ul>
+                                        <li>100% Mulberry Silk</li>
+                                        <li>Cowl neckline</li>
+                                        <li>Adjustable straps</li>
+                                        <li>Dry clean only</li>
+                                        <li>Made in Italy</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">
+                                    Shipping & Returns <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    Complimentary express shipping on all orders over ₹10,000. Returns are accepted within 14 days of delivery, provided the item is unworn and in original condition with tags attached.
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem; display: inline-block;">AURA<span>.</span></a>
+                    <p style="color: var(--color-text-muted);">Defining modern luxury. Elevate your wardrobe with our meticulously crafted collections.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="shop.html">Women's Collection</a></li>
+                        <li><a href="shop.html">Men's Collection</a></li>
+                        <li><a href="shop.html">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Client Services</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="terms.html">Shipping & Returns</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

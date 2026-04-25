@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Fashion | Premium High-End Retail</title>
+    <meta name="description" content="Elevate Your Style with Aura. Premium luxury fashion for Men, Women, and Kids.">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AURA<span>.</span></a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-icons">
+                <i class="fas fa-search"></i>
+                <i class="far fa-user"></i>
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-video-wrap">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop" alt="Luxury Fashion" class="hero-bg">
+        </div>
+        <div class="hero-overlay"></div>
+        
+        <div class="container" style="display: flex; justify-content: center;">
+            <div class="hero-content">
+                <h1 class="hero-title">Elevate Your Style</h1>
+                <p class="hero-subtitle">Discover the new standard of premium aesthetics. Crafted for the modern individual.</p>
+                <div class="hero-cta">
+                    <a href="shop.html" class="btn btn-primary">Explore Collection</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="category-grid">
+                <!-- Women -->
+                <div class="category-card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1920&auto=format&fit=crop" alt="Women's Collection" class="category-img">
+                    <div class="category-content">
+                        <h3>Women</h3>
+                        <a href="shop.html" class="category-link">Shop Now</a>
+                    </div>
+                </div>
+                <!-- Men -->
+                <div class="category-card animate-on-scroll" style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=1887&auto=format&fit=crop" alt="Men's Collection" class="category-img">
+                    <div class="category-content">
+                        <h3>Men</h3>
+                        <a href="shop.html" class="category-link">Shop Now</a>
+                    </div>
+                </div>
+                <!-- Accessories -->
+                <div class="category-card animate-on-scroll" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=1915&auto=format&fit=crop" alt="Accessories" class="category-img">
+                    <div class="category-content">
+                        <h3>Accessories</h3>
+                        <a href="shop.html" class="category-link">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Interactive Section -->
+    <section class="interactive-section">
+        <div id="canvas-container" class="canvas-container"></div>
+        <div class="container" style="position: relative; height: 100%;">
+            <div class="interactive-content animate-on-scroll">
+                <div class="interactive-text">
+                    <h2>The Essence<br>of Luxury</h2>
+                    <p>Every piece is meticulously crafted using only the finest materials, embodying a blend of timeless elegance and contemporary design.</p>
+                    <a href="about.html" class="btn btn-outline">Our Story</a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop" alt="Essence of Luxury" class="interactive-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section-padding" style="background: var(--color-surface);">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <span>Curated Selection</span>
+                <h2>New Arrivals</h2>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card animate-on-scroll">
+                    <div class="product-badge">New</div>
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1550614000-4b95d466f1fc?q=80&w=1887&auto=format&fit=crop" alt="Silk Dress" class="product-img">
+                        <img src="https://images.unsplash.com/photo-1550614000-4b95d466f1fc?q=80&w=1887&auto=format&fit=crop" alt="Silk Dress Alt" class="product-img-hover">
+                        <div class="product-actions">
+                            <div class="action-btn" title="Add to Wishlist"><i class="far fa-heart"></i></div>
+                            <div class="action-btn" title="Quick View"><i class="far fa-eye"></i></div>
+                            <div class="action-btn" title="Add to Cart"><i class="fas fa-shopping-bag"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Midnight Silk Dress</h4>
+                        <span class="product-price">₹12,500</span>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card animate-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?q=80&w=1780&auto=format&fit=crop" alt="Tailored Suit" class="product-img">
+                        <img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?q=80&w=1780&auto=format&fit=crop" alt="Tailored Suit Alt" class="product-img-hover">
+                        <div class="product-actions">
+                            <div class="action-btn"><i class="far fa-heart"></i></div>
+                            <div class="action-btn"><i class="far fa-eye"></i></div>
+                            <div class="action-btn"><i class="fas fa-shopping-bag"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Signature Wool Suit</h4>
+                        <span class="product-price">₹35,000</span>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card animate-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="product-badge" style="background: #e74c3c;">Sold Out</div>
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1712&auto=format&fit=crop" alt="Leather Boots" class="product-img">
+                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1712&auto=format&fit=crop" alt="Leather Boots Alt" class="product-img-hover">
+                        <div class="product-actions">
+                            <div class="action-btn"><i class="far fa-heart"></i></div>
+                            <div class="action-btn"><i class="far fa-eye"></i></div>
+                            <div class="action-btn"><i class="fas fa-shopping-bag"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Classic Chelsea Boots</h4>
+                        <span class="product-price">₹8,900</span>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card animate-on-scroll" style="transition-delay: 0.3s;">
+                    <div class="product-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=1915&auto=format&fit=crop" alt="Gold Watch" class="product-img">
+                        <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=1915&auto=format&fit=crop" alt="Gold Watch Alt" class="product-img-hover">
+                        <div class="product-actions">
+                            <div class="action-btn"><i class="far fa-heart"></i></div>
+                            <div class="action-btn"><i class="far fa-eye"></i></div>
+                            <div class="action-btn"><i class="fas fa-shopping-bag"></i></div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4 class="product-title">Aura Chronograph</h4>
+                        <span class="product-price">₹42,000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <a href="shop.html" class="btn btn-outline animate-on-scroll">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <span>Client Experiences</span>
+                <h2>What They Say</h2>
+            </div>
+
+            <div class="testimonial-slider animate-on-scroll">
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">"The quality of the materials and the attention to detail is simply unmatched. A true luxury experience from the moment the package arrives."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Eleanor R." class="author-img">
+                        <div class="author-info">
+                            <h4>Eleanor R.</h4>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">"Aura has completely transformed my wardrobe. Their tailored pieces fit perfectly and radiate elegance and confidence."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Marcus T." class="author-img">
+                        <div class="author-info">
+                            <h4>Marcus T.</h4>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">"Incredible customer service and beautifully crafted accessories. The gold watch is a masterpiece I wear every single day."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sophia L." class="author-img">
+                        <div class="author-info">
+                            <h4>Sophia L.</h4>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Info & Map -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="store-grid animate-on-scroll">
+                <div class="store-info">
+                    <h3>Visit Our Flagship Store</h3>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>128 Luxury Avenue, High Street<br>Mumbai, 400001</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="far fa-clock"></i>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>Mon - Sat: 10:00 AM - 9:00 PM<br>Sun: 11:00 AM - 7:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Contact</h4>
+                            <p>+91 98765 43210<br>concierge@aurafashion.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <!-- Placeholder map image representing a dark luxury map -->
+                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop" alt="Store Location Map">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem; display: inline-block;">AURA<span>.</span></a>
+                    <p style="color: var(--color-text-muted);">Defining modern luxury. Elevate your wardrobe with our meticulously crafted collections.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="shop.html">Women's Collection</a></li>
+                        <li><a href="shop.html">Men's Collection</a></li>
+                        <li><a href="shop.html">Accessories</a></li>
+                        <li><a href="shop.html">New Arrivals</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Client Services</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="terms.html">Shipping & Returns</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p style="color: var(--color-text-muted); margin-bottom: 1rem;">Subscribe to receive updates on new arrivals and exclusive offers.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aura Fashion. All Rights Reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts (CDNs) -->
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Three.js for 3D Elements -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Lenis for Smooth Scrolling -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

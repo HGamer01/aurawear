@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Aura Fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-hero {
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
+        }
+        .about-hero::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(10, 10, 10, 0.7);
+        }
+        .about-hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        .about-text-block {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AURA<span>.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons"><i class="fas fa-search"></i><i class="far fa-user"></i><i class="fas fa-shopping-bag"></i></div>
+            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <section class="about-hero animate-on-scroll">
+        <div class="about-hero-content">
+            <h1 class="page-title">Our Story</h1>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="about-text-block animate-on-scroll">
+                <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Redefining Modern Elegance</h2>
+                <p style="color: var(--color-text-muted); font-size: 1.1rem; line-height: 1.8;">
+                    Founded in 2024, Aura was born from a desire to bridge the gap between avant-garde high fashion and wearable, everyday luxury. We believe that true style isn't loud; it's the quiet confidence that comes from wearing something meticulously crafted from the world's finest materials.
+                </p>
+            </div>
+            
+            <div class="story-wrap" style="margin-top: 5rem;">
+                <div class="story-img animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1558769132-cb1fac089431?q=80&w=1974&auto=format&fit=crop" alt="Craftsmanship">
+                </div>
+                <div class="story-content animate-on-scroll">
+                    <span style="color: var(--color-accent); text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">The Craft</span>
+                    <h2>Uncompromising Quality</h2>
+                    <p>Every piece in our collection is created by master artisans who have honed their craft over decades. We source our fabrics from ethical, heritage mills in Italy and Japan, ensuring that our garments not only look extraordinary but feel divine against the skin.</p>
+                </div>
+            </div>
+            
+            <div class="story-wrap" style="margin-top: 5rem; flex-direction: row-reverse;">
+                <div class="story-img animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?q=80&w=1887&auto=format&fit=crop" alt="Design">
+                </div>
+                <div class="story-content animate-on-scroll">
+                    <span style="color: var(--color-accent); text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">The Vision</span>
+                    <h2>Sustainable Luxury</h2>
+                    <p>We reject the fast fashion cycle. Aura is built on the philosophy of creating timeless wardrobe staples that transcend seasons. By focusing on durability and classic design, we offer a sustainable alternative that will remain in your rotation for years to come.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem; display: inline-block;">AURA<span>.</span></a>
+                    <p style="color: var(--color-text-muted);">Defining modern luxury. Elevate your wardrobe with our meticulously crafted collections.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="shop.html">Women's Collection</a></li>
+                        <li><a href="shop.html">Men's Collection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Client Services</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
